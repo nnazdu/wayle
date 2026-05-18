@@ -17,6 +17,9 @@ settings-modules-media-player-priority = Player Priority
 settings-modules-media-format = Format
     .description = Label format with placeholders: {"{{ title }}"}, {"{{ artist }}"}, {"{{ album }}"}, {"{{ status }}"}, {"{{ status_icon }}"}
 
+settings-modules-media-show-only-playing = Show Only When Playing
+    .description = Hide the module when no media is playing
+
 settings-modules-media-icon-name = Icon Name
     .description = Symbolic icon name for default mode
 

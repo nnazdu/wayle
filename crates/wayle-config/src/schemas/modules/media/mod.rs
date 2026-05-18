@@ -85,6 +85,14 @@ pub struct MediaConfig {
     #[default(String::from("{{ title }} - {{ artist }}"))]
     pub format: ConfigProperty<String>,
 
+    /// Hide module when no media is playing.
+    ///
+    /// When enabled, the module will only be visible if there is an active
+    /// player in the Playing state.
+    #[serde(rename = "show-only-playing")]
+    #[default(false)]
+    pub show_only_playing: ConfigProperty<bool>,
+
     /// Symbolic icon name for default mode.
     #[serde(rename = "icon-name")]
     #[default(String::from("ld-music-symbolic"))]
